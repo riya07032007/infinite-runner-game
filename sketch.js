@@ -30,7 +30,7 @@ function preload(){
   restartImg = loadImage("restart.png")
   gameOverImg = loadImage("gameOver.png")
 
-  backgroundImg=loadImage("images/background.jpg")
+  backgroundImg=loadImage("background.jpg")
   
   jumpSound = loadSound("jump.mp3")
   dieSound = loadSound("die.mp3")
@@ -38,7 +38,7 @@ function preload(){
 }
 
 function setup() {
-  createCanvas(600, 200);
+  createCanvas(1500, 400);
 
   var message = "This is a message";
  console.log(message)
@@ -50,7 +50,7 @@ function setup() {
 
   trex.scale = 0.5;
   
-  ground = createSprite(200,180,400,20);
+  ground = createSprite(750,180,1500,20);
   ground.addImage("ground",groundImage);
   ground.x = ground.width /2;
   
