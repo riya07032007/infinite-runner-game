@@ -29,6 +29,8 @@ function preload(){
   
   restartImg = loadImage("restart.png")
   gameOverImg = loadImage("gameOver.png")
+
+  backgroundImg=loadImage("images/background.jpg")
   
   jumpSound = loadSound("jump.mp3")
   dieSound = loadSound("die.mp3")
@@ -58,7 +60,8 @@ function setup() {
   restart = createSprite(300,140);
   restart.addImage(restartImg);
   
- 
+  
+
   gameOver.scale = 0.5;
   restart.scale = 0.5;
   
@@ -80,7 +83,7 @@ function setup() {
 
 function draw() {
   
-  background("lavender");
+  background(backgroundImg);
   //displaying score
   text("Score: "+ score, 500,50);
   
